@@ -77,8 +77,8 @@
 			
 			if(isset($u) && isset($p) && $u!="" && $p!=""){
 				if($u == "admin" && $p == "admin"){
-					echo '<script> alert("Selamat Datang");</script>';
-//					header("location:Dashboard.php");
+					echo '<script> alert("Selamat Datang"); window.location.href="Dashboard.php"</script>';
+//					header(location:"Dashboard.php");
 				}else{
 					echo '<script> alert("Username/Password salah. ulangi langkah");</script>';
 				}	
